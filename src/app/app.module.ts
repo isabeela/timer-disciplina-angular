@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { DisciplinasComponent } from './disciplinas/disciplinas.component';
+import { TempoComponent } from './tempo/tempo.component';
 
 import { TempoService } from '../tempo.service';
 
@@ -20,7 +21,8 @@ import { DisciplinaService } from '../disciplina.service';
     HelloComponent,
     HomeComponent,
     NavbarComponent,
-    DisciplinasComponent
+    DisciplinasComponent,
+    TempoComponent
   ],
   bootstrap: [AppComponent],
   providers: [TempoService, DisciplinaService]

@@ -14,8 +14,19 @@ import { TempoService } from '../tempo.service';
 
 import { DisciplinaService } from '../disciplina.service';
 
+import { RouterModule } from '@angular/router';
+
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'tempo', component: TempoComponent },
+      { path: 'disciplina', component: DisciplinasComponent }
+    ])
+  ],
   declarations: [
     AppComponent,
     HelloComponent,

@@ -7,7 +7,7 @@ import { TempoService } from '../../tempo.service';
   styleUrls: ['./tempo.component.css']
 })
 export class TempoComponent implements OnInit {
-  constructor(public timerService: TempoService) {}
+  constructor(public tempoService: TempoService) {}
 
   ngOnInit() {}
 }

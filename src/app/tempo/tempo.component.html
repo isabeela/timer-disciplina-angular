@@ -1,0 +1,10 @@
+<div>
+  <label>
+Definir intervalo do timer (em ms):
+<input type="number" [(ngModel)]="timerService.interval" placeholder="">
+</label>
+  <p>{{timerService.getCount()}}s</p>
+  <button (click)="timerService.start(timerService.interval)">Iniciar</button>
+  <button (click)="timerService.stop()">Pausar</button>
+  <button (click)="timerService.reset()">Zerar</button>
+</div>
